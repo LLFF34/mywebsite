@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #iddiv{
+            background-color: blue!important;
+        }
+        .class{
+            background-color: red;
+        }
+        div{
+            background-color: yellow;
+        }
+        /*包含选择器的权重等于权重之和*/
+        div .class1{
+            background-color: pink;
+        }
+        div p{
+            background-color: black;
+        }
+        p{
+            background-color: orange;
+        }
+        /*内联选择器一般权重最高，除非遇到!important*/
+    </style>
+</head>
+<body>
+    <div class="class" id="iddiv" style="background-color: red;">11111111
+        <p class="class1">222222222</p>
+    </div>
+</body>
+</html>
