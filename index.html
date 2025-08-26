@@ -9,47 +9,120 @@
             margin: 0;
             padding: 0;
         }
-        li a{
-            color: pink;
-            font-size: 25px;
-            text-decoration: none;
-            float: left;
-            width: 200px;
+        #home{
+
+            width: 1520px;
             height: 80px;
-            line-height: 80px;
+            /* float: left; */
         }
-        .home{
+        .title{
             background-color: pink;
             font-family: 华文彩云;
-            font-size: 30px;
+            font-size: 40px;
             line-height: 80px;
             width: 500px;
             height: 80px;
+            text-align: center;
             float: left;
         }
-        .catalogue{
-            text-indent: 1em;
+        .box1{
+            float: left;
         }
-        a:hover{
+        .box2{
+            color: pink;
+            font-size: 25px;
+            text-decoration: none;
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            display: block;
+        }
+        .box3{
+            color: pink;
+            font-size: 20px;
+            text-decoration: none;
+            width: 200px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            display: block;
+        }
+        .box1 ul{
+            display: none;
+            background-color: white;
+            /* border: 0.1px solid pink; */
+        }
+        .box1:hover>a{
             background-color: pink;
             color: white;
+        }
+        .box1:hover ul{
+            display: block;
+        }
+        .box3:hover{
+            background-color: pink;
+            color: white;            
         }
     </style>
 </head>
 <body>
-    <div class="home"><h2>Welcome to Our website</h2></div>
+    <div id="home">
+        <h2 class="title">Welcome to Our website</h2>
+        <ul type="none">
+            <li class="box1">
+                <a href="./otherwebsite/loverphoto.html" title="最好看的宝" target="_blank" class="box2">
+                我宝的美照
+                </a>
+                <ul type="none">
+                    <li><a class="box3">2025 6月28日</a></li>
+                    <li><a class="box3">2025 7月11日</a></li>
+                    <li><a class="box3">2025 8月25日</a></li>
+                </ul>
+            </li>
+            <li class="box1">
+                <a href="./otherwebsite/ourphoto.html" title="李师傅和小乐" target="_blank" class="box2">
+                时光的回忆
+                </a>
+                <ul type="none">
+                    <li><a class="box3">2025 6月28日</a></li>
+                    <li><a class="box3">2025 7月11日</a></li>
+                    <li><a class="box3">2025 8月25日</a></li>
+                </ul>
+            </li>
+            <li class="box1">
+                <a href="./otherwebsite/wasaifood.html" title="馋死你略略略" target="_blank" class="box2">
+                库库一顿吃
+                </a>
+                <ul type="none">
+                    <li><a class="box3">2025 6月28日</a></li>
+                    <li><a class="box3">2025 7月11日</a></li>
+                    <li><a class="box3">2025 8月25日</a></li>
+                </ul>
+            </li>
+            <li class="box1">
+                <a href="./otherwebsite/goodscene.html" title="我宝的拍照技术" target="_blank" class="box2">
+                哇塞的风景
+                </a>
+                <ul type="none">
+                    <li><a class="box3">2025 6月28日</a></li>
+                    <li><a class="box3">2025 7月11日</a></li>
+                    <li><a class="box3">2025 8月25日</a></li>
+                </ul>
+            </li>
+            <li class="box1">
+                <a href="./otherwebsite/studying.html" title="keep studying" target="_blank" class="box2">
+                学习的记录
+                </a>
+                <ul type="none">
+                    <li><a class="box3">2025 6月28日</a></li>
+                    <li><a class="box3">2025 7月11日</a></li>
+                    <li><a class="box3">2025 8月25日</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     
-    <ul type="none" class="catalogue">
-        <li><a href="./otherwebsite/loverphoto.html" title="最好看的宝" target="_blank">
-            我宝的美照</a></li>
-        <li><a href="./otherwebsite/ourphoto.html" title="李师傅和小乐" target="_blank">
-            时光的回忆</a></li>
-        <li><a href="./otherwebsite/wasaifood.html" title="馋死你略略略" target="_blank">
-            库库一顿吃</a></li>
-        <li><a href="./otherwebsite/goodscene.html" title="我宝的拍照技术" target="_blank">
-            哇塞的风景</a></li>
-        <li><a href="./otherwebsite/studying.html" title="keep studying" target="_blank">
-            学习的记录</a></li>
-    </ul>
+
 </body>
 </html>
