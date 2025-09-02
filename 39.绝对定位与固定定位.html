@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 100px;
+        }
+        .box2{
+            width: 500px;
+            height: 2500px;
+            background-color: green;
+            margin: 0 auto;
+            position: absolute;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            right: 100px;
+            bottom: 100px;
+            position: fixed;
+        }/*子绝 父相
+        绝对定位相对的是第一屏，页面过长时和固定定位不同
+        */
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam officiis, neque odit error amet consectetur alias voluptatibus cum temporibus deserunt facere nemo ducimus minus laudantium id officia dicta a est.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit fuga voluptate repellat reprehenderit unde itaque commodi enim et doloremque eius mollitia, maxime nostrum. Soluta perferendis cumque officia iusto quibusdam quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi illum a soluta eveniet et necessitatibus accusamus saepe impedit quos nam enim, hic excepturi illo dolorem? Cumque ea blanditiis odio asperiores?Lorem ipsum dolor sit amet consectetur adipisicing elit. Est molestiae, nostrum asperiores labore blanditiis eius maxime beatae nisi, natus ab quisquam excepturi odit modi quo. Adipisci recusandae veniam maxime possimus.
+    </div>
+    <div class="box1"></div>
+    <div class="box2">
+        <div class="box3"></div>
+    </div>
+</body>
+</html>
